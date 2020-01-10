@@ -1,11 +1,12 @@
-import Taro, { useState } from '@tarojs/taro'
+import Taro from '@tarojs/taro'
 import { View } from '@tarojs/components'
-import { Counter } from "../../components";
+import { Counter ,GetCode} from "../../components";
 import './index.scss'
 const Index: Taro.FC = props => {
   return (
     <View>
-      <Counter name='计时器'></Counter>
+      <Counter name='计时器' ></Counter>
+      <GetCode interval={60} ></GetCode>
     </View>
   )
 }

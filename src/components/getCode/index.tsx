@@ -7,7 +7,7 @@ const GetCode: Taro.FC<{
 }> = props => {
     const [time, setTime] = useState(0)
     const [disabled, setDisabled] = useState(false)
-    const [timeoutId, setTimeoutId] = useState(0)
+    let timeoutId=0
     const start = () => {
         _checkConfig()
         done()
@@ -38,7 +38,7 @@ const GetCode: Taro.FC<{
             const id = setTimeout(function () {
                 _countTime()
             }, 1000) as any
-            setTimeoutId(id as number)
+            timeoutId=id
         } else {
             setDisabled(false)
 

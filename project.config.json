@@ -2,7 +2,7 @@
   "miniprogramRoot": "./dist",
   "projectname": "tsdemo",
   "description": "ts project",
-  "appid": "wx6d2790f0a34d5eb9",
+  "appid": "touristid",
   "setting": {
     "urlCheck": true,
     "es6": false,
